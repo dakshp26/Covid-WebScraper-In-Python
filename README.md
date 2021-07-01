@@ -1,4 +1,4 @@
-# Covid-WebScraper-In-Python
+# Covid WebScraper In Python
 Made use of beautifulsoup4 library for web scraping worldometer website and displayed the data using prettytable
 
 Performs the following tasks:
