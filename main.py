@@ -24,12 +24,7 @@ def on_startup_data_entry():
         for i in list_data:
             data.append(i.text)
         complete_data.append(data)
-    # for i in range(8,204):
-    #     data = []
-    #     list_data = world_data[i].find_all("td")
-    #     for i in list_data:
-    #         data.append(i.text)
-    #     complete_data.append(data)
+    
     mapped_data = list(map(lambda x: x[1:10] + [x[12]] +[x[14]],complete_data))
   
     
@@ -120,16 +115,3 @@ print("Out of the program. Thank You!!")
 
 
 
-# field_list = {
-#         "Name" : l[1],
-#         "Total Cases" : l[2],
-#         "New Cases" : l[3],
-#         "Total Deaths" : l[4],
-#         "New Deaths" : l[5],
-#         "Total Recovered" : l[6],
-#         "New Recovered" : l[7],
-#         "Active Cases" : l[8],
-#         "Serious Cases" : l[9],
-#         "Total Tests" : l[12],
-#         "Population" : l[14]   
-#     }
